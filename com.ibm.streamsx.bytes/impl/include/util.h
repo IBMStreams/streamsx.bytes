@@ -1,17 +1,10 @@
-//#include <sstream>
-//#include <string>
-//#include <iomanip>
-//#include <ios>
-//#include <iostream>
-#include <bitset>
-//#include <stdlib.h>
-//#include <map>
-#include "boost/assign.hpp"
+
+#include <streams_boost/assign.hpp>
 #include <SPL/Runtime/Function/SPLFunctions.h>
 
 using namespace std;
 
-static map<char, string> HexToBin =  boost::assign::map_list_of
+static map<char, string> HexToBin =  streams_boost::assign::map_list_of
 						('0', "0000")
 						('1', "0001")
 						('2', "0010")
