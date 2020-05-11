@@ -1,0 +1,10 @@
+*_cpp.pm
+*_h.pm
+toolkit.xml
+output
+data
+**/.apt_generated/
+/tmp/
+**/toolkit.xml
+**/.DS_Store
+/**/doc/
