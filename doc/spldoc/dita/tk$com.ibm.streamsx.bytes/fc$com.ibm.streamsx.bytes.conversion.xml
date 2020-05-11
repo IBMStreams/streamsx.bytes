@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_functions">
+<title>C++ Native Functions: <tt>com.ibm.streamsx.bytes.conversion</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; <xref href="tk$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes 2.0.0</xref> &gt; <xref href="ns$com.ibm.streamsx.bytes.conversion.xml">com.ibm.streamsx.bytes.conversion</xref> &gt; C++ Native Functions</p>
+</section>
+<section>
+This page documents native functions that can be invoked from SPL, including the SPL interfaces that can be used to invoke each of the native functions.
+</section>
+<section>
+<p outputclass="splhead-1"><b><xref href="../references/FunctionModel.xml#spldoc_reference_function_model/functionset__functions">Functions</xref></b></p><dl compact="yes">
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromASCIIToBinary.rstring"><tt>      <![CDATA[public rstring convertFromASCIIToBinary(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an ASCII string into an Binary string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromASCIIToHex.rstring"><tt>      <![CDATA[public rstring convertFromASCIIToHex(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an ASCII string into an Hex string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromBinaryToASCII.rstring"><tt>      <![CDATA[public rstring convertFromBinaryToASCII(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an Binary string into an ASCII string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromBinaryToHex.rstring"><tt>      <![CDATA[public rstring convertFromBinaryToHex(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an Binary string into an Hex string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromHexToASCII.rstring"><tt>      <![CDATA[public rstring convertFromHexToASCII(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an HEX string into an ASCII string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="convertFromHexToBinary.rstring"><tt>      <![CDATA[public rstring convertFromHexToBinary(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an Hex string into an Binary string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="decodeBase64.rstring"><tt>      <![CDATA[public rstring decodeBase64(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Decode a Base64 String
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="encodeBase64.rstring"><tt>      <![CDATA[public rstring encodeBase64(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Encode string into a Base64 string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="reverseBinaryString.rstring"><tt>      <![CDATA[public rstring reverseBinaryString(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Function that convert an Binary string into an Hex string
+</p>
+   </dd>
+ </dlentry>
+</dl>
+</section>
+</refbody>
+</reference>
+

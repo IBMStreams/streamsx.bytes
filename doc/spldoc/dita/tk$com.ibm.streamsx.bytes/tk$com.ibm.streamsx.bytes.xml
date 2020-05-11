@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_toolkit">
+<title outputclass="spltoolkitname">Toolkit <tt>com.ibm.streamsx.bytes 2.0.0</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; com.ibm.streamsx.bytes 2.0.0</p>
+</section>
+<section>
+<title outputclass="splhead-1">General Information</title>
+
+<dl>
+  <dlentry>
+  <dt>Version</dt>
+  <dd>2.0.0</dd>
+  </dlentry>
+  <dlentry>
+  <dt>Required Product Version</dt>
+  <dd>4.0.0.0</dd>
+  </dlentry>
+</dl>
+</section>
+<section>
+  <title outputclass="splhead-1">Indexes</title>
+  <dl>
+    <dlentry><dt></dt><dd></dd></dlentry>
+    <dlentry><dt><xref href="ix$Namespace.xml">Namespaces</xref></dt><dd></dd></dlentry>
+    <dlentry><dt><xref href="ix$Operator.xml">Operators</xref></dt><dd></dd></dlentry>
+    <dlentry><dt><xref href="ix$Function.xml">Functions</xref></dt><dd></dd></dlentry>
+    <dlentry><dt><xref href="ix$Type.xml">Types</xref></dt><dd></dd></dlentry>
+  </dl>
+</section>
+<section>
+  <title outputclass="splhead-1">Namespaces</title>
+  <dl>
+    <dlentry>
+      <dt outputclass="splpart"><xref href="ns$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes</xref></dt>
+      <dd></dd>
+      <dd><dl><dlentry>
+        <dt>Operators</dt>
+        <dd>
+<sl>
+<sli><xref href="op$com.ibm.streamsx.bytes$BytesParser.xml">BytesParser</xref></sli>
+</sl>
+        </dd>
+      </dlentry></dl></dd>
+      <dd><dl><dlentry>
+        <dt>Types</dt>
+        <dd>
+<sl>
+<sli><xref href="spl$com.ibm.streamsx.bytes$Types.xml#spldoc_compilationunit/type__Parameter">Parameter</xref></sli>
+</sl>
+        </dd>
+      </dlentry></dl></dd>
+     </dlentry>    <dlentry>
+      <dt outputclass="splpart"><xref href="ns$com.ibm.streamsx.bytes.conversion.xml">com.ibm.streamsx.bytes.conversion</xref></dt>
+      <dd></dd>
+      <dd><dl><dlentry>
+        <dt>Functions</dt>
+        <dd>
+<sl>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToBinary.rstring">convertFromASCIIToBinary(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToHex.rstring">convertFromASCIIToHex(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToASCII.rstring">convertFromBinaryToASCII(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToHex.rstring">convertFromBinaryToHex(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToASCII.rstring">convertFromHexToASCII(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToBinary.rstring">convertFromHexToBinary(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/decodeBase64.rstring">decodeBase64(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/encodeBase64.rstring">encodeBase64(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/reverseBinaryString.rstring">reverseBinaryString(rstring)</xref></sli>
+</sl>
+        </dd>
+      </dlentry></dl></dd>
+     </dlentry>    <dlentry>
+      <dt outputclass="splpart"><xref href="ns$com.ibm.streamsx.bytes.transformation.xml">com.ibm.streamsx.bytes.transformation</xref></dt>
+      <dd></dd>
+      <dd><dl><dlentry>
+        <dt>Functions</dt>
+        <dd>
+<sl>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromInt.int64">getBitStringFromInt(int64)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromUnsignedInt.uint64">getBitStringFromUnsignedInt(uint64)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getUnsignedIntFromBinaryString.rstring">getUnsignedIntFromBinaryString(rstring)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getValueFromBinaryString.rstring.rstring.float32.float32.float32">getValueFromBinaryString(rstring, rstring, float32, float32, float32)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateLeft.rstring.uint8">rotateLeft(rstring, uint8)</xref></sli>
+<sli><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateRight.rstring.uint8">rotateRight(rstring, uint8)</xref></sli>
+</sl>
+        </dd>
+      </dlentry></dl></dd>
+     </dlentry>  </dl>
+</section>
+</refbody>
+</reference>
+

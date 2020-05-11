@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_index">
+<title>Functions: Toolkits</title>
+<refbody>
+<section>
+<p>
+<xref href="toolkits.xml">Toolkits</xref> &gt; Functions</p>
+</section>
+<section>
+  <title outputclass="splhead-1">Functions</title>
+<dl>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToBinary.rstring">convertFromASCIIToBinary(rstring)</xref></dt>
+  <dd>Function that convert an ASCII string into an Binary string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToHex.rstring">convertFromASCIIToHex(rstring)</xref></dt>
+  <dd>Function that convert an ASCII string into an Hex string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToASCII.rstring">convertFromBinaryToASCII(rstring)</xref></dt>
+  <dd>Function that convert an Binary string into an ASCII string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToHex.rstring">convertFromBinaryToHex(rstring)</xref></dt>
+  <dd>Function that convert an Binary string into an Hex string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToASCII.rstring">convertFromHexToASCII(rstring)</xref></dt>
+  <dd>Function that convert an HEX string into an ASCII string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToBinary.rstring">convertFromHexToBinary(rstring)</xref></dt>
+  <dd>Function that convert an Hex string into an Binary string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/decodeBase64.rstring">decodeBase64(rstring)</xref></dt>
+  <dd>Decode a Base64 String</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/encodeBase64.rstring">encodeBase64(rstring)</xref></dt>
+  <dd>Encode string into a Base64 string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromInt.int64">getBitStringFromInt(int64)</xref></dt>
+  <dd>Get the bit string representation of a int</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromUnsignedInt.uint64">getBitStringFromUnsignedInt(uint64)</xref></dt>
+  <dd>Get the bit string representation of an unsigned int</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getUnsignedIntFromBinaryString.rstring">getUnsignedIntFromBinaryString(rstring)</xref></dt>
+  <dd>Get the unsigned int value from a binary string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getValueFromBinaryString.rstring.rstring.float32.float32.float32">getValueFromBinaryString(rstring, rstring, float32, float32, float32)</xref></dt>
+  <dd>Get the Value(float64) from a binary string using formula (y=factor * x + offset) where offset is an adjustement where limit is set</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/reverseBinaryString.rstring">reverseBinaryString(rstring)</xref></dt>
+  <dd>Function that convert an Binary string into an Hex string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateLeft.rstring.uint8">rotateLeft(rstring, uint8)</xref></dt>
+  <dd>Rotate left a binary string</dd>
+</dlentry>
+<dlentry>
+  <dt><xref href="../tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateRight.rstring.uint8">rotateRight(rstring, uint8)</xref></dt>
+  <dd>Rotate right a binary string</dd>
+</dlentry>
+</dl>
+</section>
+</refbody>
+</reference>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="spldoc_map">
+<title>Toolkits</title>
+<topicref navtitle="Toolkits" locktitle="yes" href="toolkits/toolkits.xml" toc="yes" linking="normal">
+<topicref navtitle="Namespaces" locktitle="yes" href="toolkits/ix$Namespace.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Operators" locktitle="yes" href="toolkits/ix$Operator.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Functions" locktitle="yes" href="toolkits/ix$Function.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Types" locktitle="yes" href="toolkits/ix$Type.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="com.ibm.streamsx.bytes 2.0.0" locktitle="yes" href="tk$com.ibm.streamsx.bytes/tk$com.ibm.streamsx.bytes.xml" toc="yes" linking="none">
+<topicref navtitle="Namespaces" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ix$Namespace.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Operators" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ix$Operator.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Functions" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ix$Function.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Types" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ix$Type.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="com.ibm.streamsx.bytes" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ns$com.ibm.streamsx.bytes.xml" toc="yes" linking="none">
+<topicref navtitle="BytesParser" locktitle="yes" href="tk$com.ibm.streamsx.bytes/op$com.ibm.streamsx.bytes$BytesParser.xml" toc="yes" linking="none">
+</topicref>
+<topicref navtitle="Types.spl" locktitle="yes" href="tk$com.ibm.streamsx.bytes/spl$com.ibm.streamsx.bytes$Types.xml" toc="yes" linking="none">
+</topicref>
+</topicref>
+<topicref navtitle="com.ibm.streamsx.bytes.conversion" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ns$com.ibm.streamsx.bytes.conversion.xml" toc="yes" linking="none">
+<topicref navtitle="C++ Native Functions" locktitle="yes" href="tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.conversion.xml" toc="yes" linking="none">
+</topicref>
+</topicref>
+<topicref navtitle="com.ibm.streamsx.bytes.transformation" locktitle="yes" href="tk$com.ibm.streamsx.bytes/ns$com.ibm.streamsx.bytes.transformation.xml" toc="yes" linking="none">
+<topicref navtitle="C++ Native Functions" locktitle="yes" href="tk$com.ibm.streamsx.bytes/fc$com.ibm.streamsx.bytes.transformation.xml" toc="yes" linking="none">
+</topicref>
+</topicref>
+</topicref>
+<topicref navtitle="Function Model" locktitle="yes" href="references/FunctionModel.xml" toc="yes" linking="none">
+</topicref>
+</topicref>
+</map>
+

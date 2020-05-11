@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_functions">
+<title>C++ Native Functions: <tt>com.ibm.streamsx.bytes.transformation</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; <xref href="tk$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes 2.0.0</xref> &gt; <xref href="ns$com.ibm.streamsx.bytes.transformation.xml">com.ibm.streamsx.bytes.transformation</xref> &gt; C++ Native Functions</p>
+</section>
+<section>
+This page documents native functions that can be invoked from SPL, including the SPL interfaces that can be used to invoke each of the native functions.
+</section>
+<section>
+<p outputclass="splhead-1"><b><xref href="../references/FunctionModel.xml#spldoc_reference_function_model/functionset__functions">Functions</xref></b></p><dl compact="yes">
+ <dlentry>
+   <dt outputclass="splpart"       id="getBitStringFromInt.int64"><tt>      <![CDATA[public rstring getBitStringFromInt(int64)]]>      </tt>   </dt>
+   <dd>
+<p>Get the bit string representation of a int
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="getBitStringFromUnsignedInt.uint64"><tt>      <![CDATA[public rstring getBitStringFromUnsignedInt(uint64)]]>      </tt>   </dt>
+   <dd>
+<p>Get the bit string representation of an unsigned int
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="getUnsignedIntFromBinaryString.rstring"><tt>      <![CDATA[public uint64 getUnsignedIntFromBinaryString(rstring)]]>      </tt>   </dt>
+   <dd>
+<p>Get the unsigned int value from a binary string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="getValueFromBinaryString.rstring.rstring.float32.float32.float32"><tt>      <![CDATA[public float64 getValueFromBinaryString(rstring,rstring,float32,float32,float32)]]>      </tt>   </dt>
+   <dd>
+<p>Get the Value(float64) from a binary string using formula (y=factor * x + offset) where offset is an adjustement where limit is set
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="rotateLeft.rstring.uint8"><tt>      <![CDATA[public rstring rotateLeft(rstring,uint8)]]>      </tt>   </dt>
+   <dd>
+<p>Rotate left a binary string
+</p>
+   </dd>
+ </dlentry>
+ <dlentry>
+   <dt outputclass="splpart"       id="rotateRight.rstring.uint8"><tt>      <![CDATA[public rstring rotateRight(rstring,uint8)]]>      </tt>   </dt>
+   <dd>
+<p>Rotate right a binary string
+</p>
+   </dd>
+ </dlentry>
+</dl>
+</section>
+</refbody>
+</reference>
+

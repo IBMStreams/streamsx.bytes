@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_compilationunit">
+<title>SPL File <tt>Types.spl</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; <xref href="tk$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes 2.0.0</xref> &gt; <xref href="ns$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes</xref> &gt; Types.spl</p>
+</section>
+<section>
+  <title outputclass="splhead-1">Content</title>
+  <dl>
+    <dlentry><dt></dt><dd></dd></dlentry>
+    <dlentry>
+      <dt outputclass="splhead-2">Types</dt>
+      <dd>
+<sl>
+<sli><b><xref href="spl$com.ibm.streamsx.bytes$Types.xml#spldoc_compilationunit/type__Parameter">Parameter</xref></b>
+</sli>
+</sl>
+      </dd>
+    </dlentry>
+  </dl>
+</section>
+<section>
+  <title outputclass="splhead-1">Types</title>
+</section>
+<section id="type__Parameter">
+  <title outputclass="splpart">Parameter</title>
+</section><section>
+   <p>
+<tt>Parameter = rstring objectName, rstring messageName, rstring messageDescription, rstring parameterName, rstring parameterDescription, rstring parameterFormat, float32 parameterFactor, float32 parameterOffset, float32 parameterLimit, rstring parameterUnit, rstring parameterBinaryString;</tt>
+   </p>
+</section>
+</refbody>
+</reference>
+

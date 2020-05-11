@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_namespace">
+<title>Namespace <tt>com.ibm.streamsx.bytes.transformation</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; <xref href="tk$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes 2.0.0</xref> &gt; com.ibm.streamsx.bytes.transformation</p>
+</section>
+<section>
+  <title outputclass="splhead-1">Functions</title>
+<sl>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromInt.int64">getBitStringFromInt(int64)</xref></b>: Get the bit string representation of a int
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getBitStringFromUnsignedInt.uint64">getBitStringFromUnsignedInt(uint64)</xref></b>: Get the bit string representation of an unsigned int
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getUnsignedIntFromBinaryString.rstring">getUnsignedIntFromBinaryString(rstring)</xref></b>: Get the unsigned int value from a binary string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/getValueFromBinaryString.rstring.rstring.float32.float32.float32">getValueFromBinaryString(rstring, rstring, float32, float32, float32)</xref></b>: Get the Value(float64) from a binary string using formula (y=factor * x + offset) where offset is an adjustement where limit is set
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateLeft.rstring.uint8">rotateLeft(rstring, uint8)</xref></b>: Rotate left a binary string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.transformation.xml#spldoc_functions/rotateRight.rstring.uint8">rotateRight(rstring, uint8)</xref></b>: Rotate right a binary string
+</sli>
+</sl>
+</section>
+</refbody>
+</reference>
+

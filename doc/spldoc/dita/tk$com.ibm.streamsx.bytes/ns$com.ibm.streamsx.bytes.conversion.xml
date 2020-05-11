@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="spldoc_namespace">
+<title>Namespace <tt>com.ibm.streamsx.bytes.conversion</tt></title>
+<refbody>
+<section>
+<p>
+<xref href="../toolkits/toolkits.xml">Toolkits</xref> &gt; <xref href="tk$com.ibm.streamsx.bytes.xml">com.ibm.streamsx.bytes 2.0.0</xref> &gt; com.ibm.streamsx.bytes.conversion</p>
+</section>
+<section>
+  <title outputclass="splhead-1">Functions</title>
+<sl>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToBinary.rstring">convertFromASCIIToBinary(rstring)</xref></b>: Function that convert an ASCII string into an Binary string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromASCIIToHex.rstring">convertFromASCIIToHex(rstring)</xref></b>: Function that convert an ASCII string into an Hex string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToASCII.rstring">convertFromBinaryToASCII(rstring)</xref></b>: Function that convert an Binary string into an ASCII string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromBinaryToHex.rstring">convertFromBinaryToHex(rstring)</xref></b>: Function that convert an Binary string into an Hex string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToASCII.rstring">convertFromHexToASCII(rstring)</xref></b>: Function that convert an HEX string into an ASCII string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/convertFromHexToBinary.rstring">convertFromHexToBinary(rstring)</xref></b>: Function that convert an Hex string into an Binary string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/decodeBase64.rstring">decodeBase64(rstring)</xref></b>: Decode a Base64 String
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/encodeBase64.rstring">encodeBase64(rstring)</xref></b>: Encode string into a Base64 string
+</sli>
+<sli><b><xref href="fc$com.ibm.streamsx.bytes.conversion.xml#spldoc_functions/reverseBinaryString.rstring">reverseBinaryString(rstring)</xref></b>: Function that convert an Binary string into an Hex string
+</sli>
+</sl>
+</section>
+</refbody>
+</reference>
+
