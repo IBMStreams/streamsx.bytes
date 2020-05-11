@@ -1,7 +1,7 @@
 namespace com.ibm.streamsx.bytes.sample;
 use com.ibm.streamsx.bytes::* ;
 
-composite Ais{
+public composite Ais{
 	type
 		AIS_RAW=
 			rstring AIVDM
@@ -17,7 +17,7 @@ composite Ais{
 		stream<AIS_RAW> Input = FileSource()
 		{
 			param
-				file : "nmea-sample" ;
+				file : getThisToolkitDir()+"/opt/nmea-sample" ;
 		}
 
 		(
