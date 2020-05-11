@@ -1,6 +1,6 @@
 /* Additional includes go here */
 #include <jansson.h>
-#include <boost/algorithm/string.hpp>
+#include "streams_boost/algorithm/string.hpp"
 #include <iomanip>
 #include <BytesFunctions.h>
 
@@ -269,13 +269,13 @@ void loadExtractorSchema(ObjectDef &o,string fileName){
     ready=true;
 	SPLAPPTRC(L_TRACE, "<-loadExtractorSchema", SPL_OPER_DBG);
 }
-void reverseBinary(boost::dynamic_bitset<> &from,boost::dynamic_bitset<> &to){
+void reverseBinary(streams_boost::dynamic_bitset<> &from,streams_boost::dynamic_bitset<> &to){
 	unsigned int sz=from.size();
 	for (unsigned int i = 0; i < sz; i++)
 		to[(sz-1) - i] = from[i];
 }
-void reverseBinary(boost::dynamic_bitset<> &to){
-	boost::dynamic_bitset<> from(to);
+void reverseBinary(streams_boost::dynamic_bitset<> &to){
+	streams_boost::dynamic_bitset<> from(to);
 	unsigned int sz=from.size();
 	for (unsigned int i = 0; i < sz; i++)
 		to[(sz-1) - i] = from[i];
@@ -410,7 +410,7 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 		/*
 		 * Match the identifier and remove
 		 */
-		if(boost::iequals(extractedIdentifier, object.messages[messageCounter].identifier)){
+		if(streams_boost::iequals(extractedIdentifier, object.messages[messageCounter].identifier)){
 			isMessageDefFound=true;
 			<%
 			if ($::identifier  ne 'NONE') {
@@ -430,11 +430,11 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 			/*
 			 * 
 			 */
-		    boost::dynamic_bitset<> binary;
+		    streams_boost::dynamic_bitset<> binary;
 			if(object.dictionnary.size() > 0){
-				binary= boost::dynamic_bitset<>(com::ibm::streamsx::bytes::conversion::convertFromHexToBinaryUsingDictionnary(inputMessage,object.dictionnary));
+				binary= streams_boost::dynamic_bitset<>(com::ibm::streamsx::bytes::conversion::convertFromHexToBinaryUsingDictionnary(inputMessage,object.dictionnary));
 			}else{
-				binary= boost::dynamic_bitset<>(com::ibm::streamsx::bytes::conversion::convertFromHexToBinary(inputMessage));
+				binary= streams_boost::dynamic_bitset<>(com::ibm::streamsx::bytes::conversion::convertFromHexToBinary(inputMessage));
 			}
 			SPLAPPTRC(L_DEBUG, "Binary : "<<binary, SPL_OPER_DBG);
 			otuple.set_objectName(object.name);
@@ -448,7 +448,7 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 				/*
 				 * inline parameter
 				 */
-				boost::dynamic_bitset<> extracted;
+				streams_boost::dynamic_bitset<> extracted;
 			    extracted=(binary>>(binary.size()-(object.messages[messageCounter].inlineParameter.start+object.messages[messageCounter].inlineParameter.length)));
 				extracted.resize(object.messages[messageCounter].inlineParameter.length);
 				inlineValue=extracted.to_ulong();
@@ -466,7 +466,7 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 						/*
 						 * Need to extract the byte, rotate, reduce
 						 */
-						boost::dynamic_bitset<> byte;
+						streams_boost::dynamic_bitset<> byte;
 					    byte=(binary>>(binary.size()-(object.messages[messageCounter].multiplex[multiplexCounter].parameters[parameterCounter].byteNumber*object.messages[messageCounter].byteContainerLength)));
 						byte.resize(object.messages[messageCounter].byteContainerLength);
 						SPLAPPTRC(L_DEBUG,"byte extracted : "<< byte, SPL_OPER_DBG);
@@ -478,7 +478,7 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 							SPLAPPTRC(L_DEBUG,"byte rotated : "<< byte, SPL_OPER_DBG);
 						}
 								
-						boost::dynamic_bitset<> reduced(byte);
+						streams_boost::dynamic_bitset<> reduced(byte);
 //						reduced=	(byte >> (byte.size()-(object.messages[messageCounter].byteLength))) | (byte << (byte.size()-(object.messages[messageCounter].byteLength)));
 //						reduced=	(byte >> (byte.size()-(object.messages[messageCounter].byteLength))) | (byte << (byte.size()-(object.messages[messageCounter].byteLength)));
 						SPLAPPTRC(L_DEBUG,"byte moved befor resize : "<< reduced, SPL_OPER_DBG);
@@ -494,7 +494,7 @@ void MY_OPERATOR::process(Tuple & tuple, uint32_t port)
 						/*
 						 * Extract bits from the byte
 						 */
-						boost::dynamic_bitset<> extracted(reduced);
+						streams_boost::dynamic_bitset<> extracted(reduced);
 						/*
 						 * Compute how many bits we have to move to have the value
 						 */

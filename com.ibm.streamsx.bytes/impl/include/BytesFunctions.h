@@ -8,7 +8,8 @@
 //#include "bytes/Transformation.h"
 #include "util.h"
 #include <iomanip>
-#include "boost/dynamic_bitset.hpp"
+#include <bitset>
+#include "streams_boost/dynamic_bitset.hpp"
 
 using namespace SPL;
 using namespace std;
@@ -176,8 +177,8 @@ namespace bytes{
 		inline rstring reverseBinaryString(const string& input){
 			SPLAPPTRC(L_DEBUG, "Reverse Binary String  :  " <<input , SPL_OPER_DBG);
 			ostringstream oss;
-			boost::dynamic_bitset<> b(input);
-			boost::dynamic_bitset<> out;
+			streams_boost::dynamic_bitset<> b(input);
+			streams_boost::dynamic_bitset<> out;
 			unsigned int sz=b.size();
 			for (unsigned int i = 0; i < sz; i++)
 				out[(sz-1) - i] = b[i];
@@ -231,7 +232,7 @@ namespace bytes{
 			}
 		}
 		inline long getUnsignedIntFromBinaryString(string input){
-			boost::dynamic_bitset<> b(input);
+			streams_boost::dynamic_bitset<> b(input);
 			return b.to_ulong();
 		}
 		inline double getValueFromBinaryString(string input,string format,double factor,double offset,double limit){
@@ -247,16 +248,16 @@ namespace bytes{
 	    	return result;
 		}
 		inline string rotateLeft(string input,unsigned int shift){
-			boost::dynamic_bitset<> b(input);
-			boost::dynamic_bitset<> rol;
+			streams_boost::dynamic_bitset<> b(input);
+			streams_boost::dynamic_bitset<> rol;
 			ostringstream oss;
 			rol=	(b >> (b.size()-shift)) | (b << shift);
 			oss<<rol;
 			return oss.str();
 		}
 		inline string rotateRight(string input,unsigned int shift){
-			boost::dynamic_bitset<> b(input);
-			boost::dynamic_bitset<> ror;
+			streams_boost::dynamic_bitset<> b(input);
+			streams_boost::dynamic_bitset<> ror;
 			ostringstream oss;
 			ror=	(b << (b.size()-shift)) | (b >> shift);
 			oss<<ror;

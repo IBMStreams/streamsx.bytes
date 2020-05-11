@@ -1,5 +1,5 @@
 
-#include <streams_boost/assign.hpp>
+#include "streams_boost/assign.hpp"
 #include <SPL/Runtime/Function/SPLFunctions.h>
 
 using namespace std;
