@@ -1,6 +1,6 @@
 streamsx.bytes
 ==============
-The toolkit requires jannson and jannson-devel packages in order to parse JSON
+The toolkit requires `jannson` and `jannson-devel` packages in order to parse JSON
 
 This toolkit provides
 
