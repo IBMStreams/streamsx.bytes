@@ -7,6 +7,9 @@
 .PHONY: all distributed clean 
 
 SPLC_FLAGS = -a -t ../../com.ibm.streamsx.bytes
+ifdef STREAMS_BUILDSERVICE
+    SPLC_FLAGS = -a -t ../toolkits:$(STREAMS_INSTALL)/toolkits
+endif
 SPLC = $(STREAMS_INSTALL)/bin/sc
 SPL_CMD_ARGS ?= 
 SPL_MAIN_COMPOSITE = com.ibm.streamsx.bytes.sample::Ais
